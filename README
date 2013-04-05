@@ -15,3 +15,15 @@ How to use:
 5.1. a == 3 ... a > 6 ... a > 1 ... a == 0
 5.2. b == 9 ... 8 > b ... 3 > b ... a == b
 doesn't work: 3 <= a <= 5
+
+See examples of use in each X?Y.py file at the end.
+XdY is common nomenclature for rolling X dice with Y faces and summing them.
+XeY is a modification of XdY that allows for Shadowrun-style explosions, where
+the highest value results in an additional roll to be summed.
+XhY rolls X dice with Y faces, but takes the highest value shown.
+Since each class builds a distribution from a common class, they may be
+intermixed together in arbitrary ways to yield new distributions.
+
+Infinite distributions (such as those created by XeY) are truncated after some
+small error. See series.py (series.maxterms) and PMF.py (PMF.error). Finite
+distributions of sufficient density might also be truncated.
