@@ -1,0 +1,17 @@
+DieStatistician is a toolset for analyzing tabletop game dice outcomes.
+
+The name is a pun:
+1. Statisician of a Die. A statistician studying dice. Die is the singular form
+of dice.
+2. (You) Die, statistician. A command requesting that some ungainly statistician
+should cease to exist.
+
+How to use:
+1. run python
+2. from XdY import XdY
+3. generate one six-sided die: a = XdY( [1,6] )
+4. generate three eight-sided dice added together: b = XdY( [3,8] )
+5. compare them:
+5.1. a == 3 ... a > 6 ... a > 1 ... a == 0
+5.2. b == 9 ... 8 > b ... 3 > b ... a == b
+doesn't work: 3 <= a <= 5
