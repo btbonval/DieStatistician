@@ -13,7 +13,6 @@ from testbase import TestSeriesPMF
 
 class TestPMF(TestSeriesPMF):
     # Test functions in PMF.py
-    repeat = 10
 
     def test_bad_construction_dist(self):
         # Test a bad distribution passed into the constructor

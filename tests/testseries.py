@@ -11,21 +11,18 @@ from testbase import TestSeriesPMF
 
 class TestSeries(TestSeriesPMF):
     # Test functions in series.py
-    repeat = 10
 
     def test_finite_str(self):
         # Test that a string is returned.
-        for i in range(0, self.repeat):
-            obj = self._build_finite_obj()
-            test = str(obj)
-            self.assertTrue(isinstance(test, str) or isinstance(test, unicode))
+        obj = self._build_finite_obj()
+        test = str(obj)
+        self.assertTrue(isinstance(test, str) or isinstance(test, unicode))
 
     def test_infinite_str(self):
         # Test that a string is returned.
-        for i in range(0, self.repeat):
-            obj = self._build_infinite_obj()
-            test = str(obj)
-            self.assertTrue(isinstance(test, str) or isinstance(test, unicode))
+        obj = self._build_infinite_obj()
+        test = str(obj)
+        self.assertTrue(isinstance(test, str) or isinstance(test, unicode))
 
     def test_infinite_str_maxterms(self):
         # Test that maxterms is respected

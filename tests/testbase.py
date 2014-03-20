@@ -17,7 +17,6 @@ class InfinitePMF(InfiniteSequence, PMF): pass
 
 class TestSeriesPMF(unittest.TestCase):
     # Test functions in series.py
-    repeat = 10
 
     def _build_obj(self, cls, length = None):
         if length is None:

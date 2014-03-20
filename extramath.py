@@ -17,7 +17,6 @@ def permutation(n,r):
    ''' Calculate the permutation of n P r. '''
    return factorial(n)*1.0 / factorial(n-r)
 
-
 def combination(n,k):
    ''' Calculate the combination of n C k. '''
    return permutation(n,k) / factorial(k)

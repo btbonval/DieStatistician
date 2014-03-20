@@ -8,6 +8,8 @@ series of values.
 FiniteSequence stores a discrete, finite series of values.
 InfiniteSequence stores a discrete, pseudo-infinite or
 maintains a calculation to represent a discrete, infinite sequence.
+
+These classes expect to be subclassed with PMF classes.
 '''
 
 class FiniteSequence():
@@ -17,7 +19,6 @@ class FiniteSequence():
    def __str__(self):
       ''' Convert to string by printing the contained distribution. '''
       return str(self.getDistribution())
-
 
 class InfiniteSequence():
    ''' Contains features common to infinite sequences.
