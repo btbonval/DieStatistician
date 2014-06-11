@@ -76,15 +76,15 @@ class testxdy(unittest.TestCase):
         self._equals(11 <= a1d20, 0.50)
 
         self._equals(1 <= a1d20 <= 10, 0.50)
-        self._equals(10 >= a1d20 >= 1, 0.50) # ERROR
-        self._equals(11 <= a1d20 <= 20, 0.50) # ERROR
+        self._equals(10 >= a1d20 >= 1, 0.50) # fail
+        self._equals(11 <= a1d20 <= 20, 0.50) # fail
         self._equals(20 >= a1d20 >= 11, 0.50)
 
         # 1d20 has 1/20 probability of any particular value
         self._equals(a1d20 == 10, 0.05)
         self._equals(9 == a1d20, 0.05)
 
-        self._equals(9 < a1d20 < 11, 0.05) # ERROR
+        self._equals(9 < a1d20 < 11, 0.05) # fail
         self._equals(1 <= a1d20 <= 1, 0.05)
-        self._equals(11 > a1d20 > 9, 0.05) # ERROR
-        self._equals(1 >= a1d20 >= 1, 0.05) # ERROR
+        self._equals(11 > a1d20 > 9, 0.05) # fail
+        self._equals(1 >= a1d20 >= 1, 0.05) # fail
